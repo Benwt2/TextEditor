@@ -108,5 +108,10 @@ namespace TextEditor
                 // 如果文字沒有底線，則增加底線
                 rtbText.Selection.ApplyPropertyValue(Inline.TextDecorationsProperty, TextDecorations.Underline);
         }
+        private void rtbText_LostFocus(object sender, RoutedEventArgs e)
+        {
+            // 避免選擇的文字因為按下修改格式的選項與按鍵，造成取消選擇
+            e.Handled = true;
+        }
     }
 }
