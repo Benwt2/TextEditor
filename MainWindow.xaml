@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="btnOpen" Content="開啟檔案" HorizontalAlignment="Left" Margin="23,22,0,0" VerticalAlignment="Top" Width="90" Height="60"/>
+        <Button x:Name="btnSave" Content="存檔" HorizontalAlignment="Left" Margin="142,22,0,0" VerticalAlignment="Top" Width="90" Height="60"/>
+        <RichTextBox x:Name="rtbText" Margin="10,100,10,10">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="btnUnderline" Content="底線" HorizontalAlignment="Left" Margin="688,52,0,0" VerticalAlignment="Top" Height="30" Width="35"/>
+        <Button x:Name="btnBold" Content="粗體" HorizontalAlignment="Left" Margin="558,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.127,-0.751" Height="30" Width="35"/>
+        <Button x:Name="btnItalic" Content="斜體" HorizontalAlignment="Left" Margin="625,52,0,0" VerticalAlignment="Top" Height="30" Width="35"/>
+        <ComboBox x:Name="cmbFontFamily" HorizontalAlignment="Left" Margin="254,56,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbFontSize" HorizontalAlignment="Left" Margin="400,56,0,0" VerticalAlignment="Top" Width="120"/>
+
     </Grid>
 </Window>
